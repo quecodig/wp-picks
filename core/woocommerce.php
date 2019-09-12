@@ -38,7 +38,7 @@
 
 	add_filter ('woocommerce_gateway_icon', function ($contenido, $id) {
 		if ('epayco' == $id)
-			return '<img src="'.plugins_url('assets/img/logo_epayco_200px.png', APOSTADORES_PLUGIN_FILE ).'" width="51"/>';
+			return '<img src="'.plugins_url('assets/img/epayco.png', APOSTADORES_PLUGIN_FILE ).'" width="51"/>';
 		return $contenido;
 	}, 10, 2);
 
