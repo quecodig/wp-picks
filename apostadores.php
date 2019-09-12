@@ -1,11 +1,11 @@
 <?php
 	/*
 	Plugin Name: Apostadores Plugin
-	Plugin URI: https://www.quecodigo.com/
+	Plugin URI: https://www.losapostadores.com/
 	Description: Apostador versión Custom_post_type
 	Version: 1.0
 	Author: QuéCódigo, Cristian Álvarez
-	Author URI: https://www.quecodigo.com
+	Author URI: https://www.losapostadores.com
 	License: GPL2
 	Requires at least: 4.0
 	Tested up to: 5.2.2
