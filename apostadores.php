@@ -1,10 +1,10 @@
 <?php
 	/*
-	Plugin Name: Apostadores
+	Plugin Name: Apostadores Plugin
 	Plugin URI: https://www.quecodigo.com/
 	Description: Apostador versión Custom_post_type
 	Version: 1.0
-	Author: QuéCódigo, CristiandAlvarez
+	Author: QuéCódigo, Cristian Álvarez
 	Author URI: https://www.quecodigo.com
 	License: GPL2
 	Requires at least: 4.0
@@ -12,6 +12,7 @@
 	Text Domain: apostadores_text
 	Domain Path: /languages/
 	*/
+
 	defined( 'ABSPATH' ) or die( 'Error de acceso al plugin' );
 
 	if( ! function_exists('add_filter')){
