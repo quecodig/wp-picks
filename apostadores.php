@@ -35,7 +35,7 @@
 	// Bail early if attempting to run on non-supported php versions.
 	if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
 		function apostadores_incompatible_admin_notice() {
-			echo '<div class="error"><p>' . __( 'QuéCódigo requires PHP 5.3 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated.', 'QCText' ) . '</p></div>';
+			echo '<div class="error"><p>' . __( 'Aposradores requires PHP 5.3 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated.', 'apostadores_text' ) . '</p></div>';
 			if ( isset( $_GET['activate'] ) ) {
 				unset( $_GET['activate'] );
 			}
