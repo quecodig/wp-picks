@@ -31,9 +31,8 @@
 
 	//	Personalizar Métodos de Pago
 	add_filter ('woocommerce_gateway_icon', function ($contenido, $id) {
-		global $woocommerce;
 		if ('paypal' == $id)
-			return '<img src="'.plugins_url('woocommerce/includes/gateways/paypal/assets/images/paypal.png').'" width="51"/>';
+			return '<img src="'.plugins_url('assets/img/paypal.png', APOSTADORES_PLUGIN_FILE ).'" width="51"/>';
 		return $contenido;
 	}, 10, 2);
 
