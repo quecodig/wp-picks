@@ -8,6 +8,13 @@
 		return $checkout_url;
 	}
 
+	// Limitar a Producto Único
+	add_filter( 'woocommerce_add_cart_item_data', 'apostadores_one_item_cart', 10, 1 );
+	function apostadores_one_item_cart( $cartItemData ) {
+		wc_empty_cart();
+		return $cartItemData;
+	}
+
 	// Eliminar Campos Adicionales de WooCommerce en la Zona de Pago
 	add_filter( 'woocommerce_checkout_fields' , 'apostadores_checkout_fields' );
 
@@ -76,11 +83,4 @@
 			break;
 		}
 		return $translated_text;
-	}
-
-	// Limitar a Producto Único
-	add_filter( 'woocommerce_add_cart_item_data', 'apostadores_one_item_cart', 10, 1 );
-	function apostadores_one_item_cart( $cartItemData ) {
-		wc_empty_cart();
-		return $cartItemData;
 	}
