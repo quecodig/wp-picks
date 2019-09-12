@@ -22,7 +22,7 @@
 
 	//Init
 	if( ! defined( 'APOSTADORES_VERSION' ) ){
-		define("APOSTADORES_VERSION", "1.6.3.1");
+		define("APOSTADORES_VERSION", "1.0");
 	}
 	// Define "FILE" del plugin
 	if ( ! defined( 'APOSTADORES_PLUGIN_FILE' ) ) {
@@ -34,17 +34,17 @@
 
 	// Bail early if attempting to run on non-supported php versions.
 	if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
-		function quecodig_incompatible_admin_notice() {
+		function apostadores_incompatible_admin_notice() {
 			echo '<div class="error"><p>' . __( 'QuéCódigo requires PHP 5.3 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated.', 'QCText' ) . '</p></div>';
 			if ( isset( $_GET['activate'] ) ) {
 				unset( $_GET['activate'] );
 			}
 		}
-		function quecodig_deactivate_self() {
-			deactivate_plugins( plugin_basename( QC_PLUGIN_FILE ) );
+		function apostadores_deactivate_self() {
+			deactivate_plugins( plugin_basename( APOSTADORES_PLUGIN_FILE ) );
 		}
-		add_action( 'admin_notices', 'quecodig_incompatible_admin_notice' );
-		add_action( 'admin_init', 'quecodig_deactivate_self' );
+		add_action( 'admin_notices', 'apostadores_incompatible_admin_notice' );
+		add_action( 'admin_init', 'apostadores_deactivate_self' );
 		return;
 	}
 
@@ -69,5 +69,5 @@
 		dbDelta( $sql );
 	}
 
-	include APOSTADOR_PLUGIN_PATH."/core/custom_post.php";
-	include APOSTADOR_PLUGIN_PATH."/core/woocommerce.php";
+	include APOSTADORES_PLUGIN_PATH."/core/custom_post.php";
+	include APOSTADORES_PLUGIN_PATH."/core/woocommerce.php";

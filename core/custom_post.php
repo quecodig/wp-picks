@@ -83,10 +83,10 @@
 		$event_anali = get_post_meta( $post->ID, 'event_anali', true );
 		// Se añade un campo nonce para probarlo más adelante cuando validemos
 		wp_nonce_field( 'apostadores_eventos_metabox', 'apostadores_eventos_metabox_nonce' );
-		include APOSTADOR_PLUGIN_PATH."/admin/custom_post.php";
+		include APOSTADORES_PLUGIN_PATH."/admin/custom_post.php";
 	}
 
-	include APOSTADOR_PLUGIN_PATH."/core/save_post.php";
+	include APOSTADORES_PLUGIN_PATH."/core/save_post.php";
 	add_action( 'save_post', 'apostadores_eventos_save_data' );
 
 	add_filter( 'manage_apostadores_posts_columns', 'apostadores_custom_edit_eventos_columns' );
