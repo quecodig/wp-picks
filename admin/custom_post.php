@@ -110,6 +110,7 @@
 				<ul>
 					<li><a id="negro" class="add-emoji" data-tag="👨🏽" href="#">👨🏽</a></li>
 					<li><a id="cartel" class="add-emoji" data-tag="📋" href="#">📋</a></li>
+					<li><a id="check" class="add-emoji" data-tag="✅" href="#">✅</a></li>
 				</ul>
 			</div>
 		</td>

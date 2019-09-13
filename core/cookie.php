@@ -12,7 +12,7 @@
 		// Localize the script with new data
 		$invcookienoticeoptions = array(
 			'domain' => 'Los Apostadores',
-			'privacylink' => 'Link',
+			'privacylink' => site_url().'/politicas/',
 			'privacylinktext' => 'Politicas de Privacidad',
 			'cookietext' => 'utiliza cookies para mejorar su experiencia de usuario.',
 			'cookietextcolor' => '#FFFFFF',
