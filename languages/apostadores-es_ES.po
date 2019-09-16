@@ -1,0 +1,32 @@
+# Copyright (C) 2019 Apostadores Plugin
+# This file is distributed under the same license as the Apostadores Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Apostadores plugin 1.0\n"
+"Report-Msgid-Bugs-To: https://www.quecodigo.com/\n"
+"POT-Creation-Date: 2019-12-09 04:14:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-09-13 10:02-0500\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+
+#. Plugin Name of the plugin
+msgid "Apostadores Plugin"
+msgstr ""
+
+#. core/cookie.php:16
+msgid "Privacy policies"
+msgstr "Políticas de privacidad"
+
+#. core/cookie.php:17
+msgid "Use cookies to improve your user experience."
+msgstr "Utilice cookies para mejorar su experiencia de usuario."
+
+#. core/cookie.php:19
+msgid "Accept"
+msgstr "Aceptar"

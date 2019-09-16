@@ -13,10 +13,10 @@
 		$invcookienoticeoptions = array(
 			'domain' => 'Los Apostadores',
 			'privacylink' => site_url().'/politicas/',
-			'privacylinktext' => 'Politicas de Privacidad',
-			'cookietext' => 'utiliza cookies para mejorar su experiencia de usuario.',
+			'privacylinktext' => __('Privacy policies', 'apostadores'),
+			'cookietext' => __('Use cookies to improve your user experience.', 'apostadores'),
 			'cookietextcolor' => '#FFFFFF',
-			'buttontext' => 'Aceptar',
+			'buttontext' => __('Accept', 'apostadores'),
 			'buttontextcolor' => '#FFFFFF',
 			'buttoncolor' => '#07A6D0',
 			'buttonradius' => '5px',
@@ -25,7 +25,7 @@
 			'backgroundcolor1' => '#222222',
 			'backgroundcolor2' => '#222222',
 			'backgroundcolor3' => '#222222',
-			'cookieduration' => '365',
+			'cookieduration' => '90',
 		);
 		wp_localize_script( 'cookienotice', 'invcookienoticeoptions', $invcookienoticeoptions );
 	        // Enqueued script with localized data.

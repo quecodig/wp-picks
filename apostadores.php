@@ -9,7 +9,7 @@
 	License: GPL2
 	Requires at least: 4.0
 	Tested up to: 5.2.2
-	Text Domain: apostadores_text
+	Text Domain: apostadores
 	Domain Path: /languages/
 	*/
 
@@ -47,6 +47,14 @@
 		add_action( 'admin_notices', 'apostadores_incompatible_admin_notice' );
 		add_action( 'admin_init', 'apostadores_deactivate_self' );
 		return;
+	}
+
+	add_action('plugins_loaded', 'apostadores_plugin_load_textdomain');
+
+	function apostadores_plugin_load_textdomain() {
+		$text_domain	= 'apostadores';
+		$path_languages = basename(dirname(__FILE__)).'/languages/';
+		load_plugin_textdomain($text_domain, false, $path_languages );
 	}
 
 	register_activation_hook( __FILE__ , 'apostadores_activate' );
