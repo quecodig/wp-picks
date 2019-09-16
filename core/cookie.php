@@ -13,8 +13,8 @@
 		$invcookienoticeoptions = array(
 			'domain' => 'Los Apostadores',
 			'privacylink' => site_url().'/politicas/',
-			'privacylinktext' => __('Privacy policies', 'apostadores'),
-			'cookietext' => __('Use cookies to improve your user experience.', 'apostadores'),
+			'privacylinktext' => __('Read more', 'apostadores'),
+			'cookietext' => __('use cookies to improve your experience. If you continue to use the website, you accept our terms and conditions.', 'apostadores'),
 			'cookietextcolor' => '#FFFFFF',
 			'buttontext' => __('Accept', 'apostadores'),
 			'buttontextcolor' => '#FFFFFF',
