@@ -71,4 +71,4 @@
 	}
 
 	include APOSTADORES_PLUGIN_PATH."/core/custom_post.php";
-	include APOSTADORES_PLUGIN_PATH."/core/woocommerce.php";
+	include APOSTADORES_PLUGIN_PATH."/core/edd.php";
