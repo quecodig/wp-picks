@@ -25,7 +25,7 @@
 			'backgroundcolor1' => '#222222',
 			'backgroundcolor2' => '#222222',
 			'backgroundcolor3' => '#222222',
-			'cookieduration' => '365',
+			'cookieduration' => '90',
 		);
 		wp_localize_script( 'cookienotice', 'invcookienoticeoptions', $invcookienoticeoptions );
 	        // Enqueued script with localized data.

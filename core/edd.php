@@ -58,6 +58,12 @@
 			case 'Precio del artículo' :
 			$translated_text = __( 'Precio', 'easy-digital-downloads' );
 			break;
+			case 'Información personal' :
+			$translated_text = __( 'Datos básicos', 'easy-digital-downloads' );
+			break;
+			case 'Dirección de correo electrónico' :
+			$translated_text = __( 'Correo electrónico', 'easy-digital-downloads' );
+			break;
 		}
 		return $translated_text;
 	}
