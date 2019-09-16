@@ -9,7 +9,7 @@
 	License: GPL2
 	Requires at least: 4.0
 	Tested up to: 5.2.2
-	Text Domain: apostadores_text
+	Text Domain: apostadores
 	Domain Path: /languages/
 	*/
 
@@ -36,7 +36,7 @@
 	// Bail early if attempting to run on non-supported php versions.
 	if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
 		function apostadores_incompatible_admin_notice() {
-			echo '<div class="error"><p>' . __( 'Aposradores requires PHP 5.3 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated.', 'apostadores_text' ) . '</p></div>';
+			echo '<div class="error"><p>' . __( 'Aposradores requires PHP 5.3 (or higher) to function properly. Please upgrade PHP. The Plugin has been auto-deactivated.', 'apostadores' ) . '</p></div>';
 			if ( isset( $_GET['activate'] ) ) {
 				unset( $_GET['activate'] );
 			}
@@ -47,6 +47,14 @@
 		add_action( 'admin_notices', 'apostadores_incompatible_admin_notice' );
 		add_action( 'admin_init', 'apostadores_deactivate_self' );
 		return;
+	}
+
+	add_action('plugins_loaded', 'apostadores_plugin_load_textdomain');
+
+	function apostadores_plugin_load_textdomain() {
+		$text_domain	= 'apostadores';
+		$path_languages = basename(dirname(__FILE__)).'/languages/';
+		load_plugin_textdomain($text_domain, false, $path_languages );
 	}
 
 	register_activation_hook( __FILE__ , 'apostadores_activate' );
