@@ -29,6 +29,15 @@
 		define( 'EDD_SLUG', 'producto' );
 	}
 
+
+	// Eliminar Campo Cupón de Descuento
+	add_action( 'init', 'apostadores_edd_remove_discount_field' );
+	function apostadores_edd_remove_discount_field() {
+		remove_action( 'edd_checkout_form_top', 'edd_discount_field', -1 );
+	}
+
+
+
 	// Eliminar Acciones Rápidas Checkout
 	add_filter( 'edd_payment_row_actions', 'apostadores_edd_remove_payment_delete_action', 10, 2 );
 	function apostadores_edd_remove_payment_delete_action( $row_actions, $payment ) {
