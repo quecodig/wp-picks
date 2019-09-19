@@ -37,7 +37,6 @@
 	}
 
 
-
 	// Eliminar Acciones Rápidas Checkout
 	add_filter( 'edd_payment_row_actions', 'apostadores_edd_remove_payment_delete_action', 10, 2 );
 	function apostadores_edd_remove_payment_delete_action( $row_actions, $payment ) {
@@ -66,3 +65,11 @@
 		}
 		return $translated_text;
 	}
+
+
+	// Icono de Pago Personalizado
+	//add_filter( 'edd_accepted_payment_icons', 'apostadores_edd_payment_icon' );
+	//function apostadores_edd_payment_icon( $icons = array() ) {
+	//	$icons['https://static.platzi.com/media/flags/CO.png'] = 'Bancolombia';
+	//	return $icons;
+	//}
