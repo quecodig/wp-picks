@@ -80,4 +80,4 @@
 
 	include APOSTADORES_PLUGIN_PATH."/core/custom_post.php";
 	include APOSTADORES_PLUGIN_PATH."/core/edd.php";
-	include APOSTADORES_PLUGIN_PATH."/core/cookie.php";
+	//include APOSTADORES_PLUGIN_PATH."/core/cookie.php";
