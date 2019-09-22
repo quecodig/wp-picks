@@ -3,7 +3,7 @@
 	function inv_cookie_notice_styles() {
 		wp_register_style( 'cookie-notice-front-styles', plugins_url('assets/css/inv-cookie-notice.css', APOSTADORES_PLUGIN_FILE) );
 		wp_enqueue_style( 'cookie-notice-front-styles' );
-		wp_register_style( 'cookie-notice-front-styles-alignment', plugins_url('assets/css/inv-cookie-notice-right.css', APOSTADORES_PLUGIN_FILE) );
+		wp_register_style( 'cookie-notice-front-styles-alignment', plugins_url('assets/css/inv-cookie-notice-left.css', APOSTADORES_PLUGIN_FILE) );
 		wp_enqueue_style( 'cookie-notice-front-styles-alignment' );
 		wp_register_script( 'js-cookie', plugins_url('assets/js/js.cookie.js', APOSTADORES_PLUGIN_FILE), array('jquery') );
 		wp_enqueue_script( 'js-cookie' );
