@@ -10,9 +10,10 @@
 		// Register the script
 		wp_register_script( 'cookienotice', plugins_url('assets/js/inv-cookie-notice.js', APOSTADORES_PLUGIN_FILE), array('jquery') );
 		// Localize the script with new data
+		$privacy = get_post(get_option( 'wp_page_for_privacy_policy'));
 		$invcookienoticeoptions = array(
 			'domain' => 'Los Apostadores',
-			'privacylink' => site_url().'/politicas/',
+			'privacylink' => $privacy->guid,
 			'privacylinktext' => __('Read more', 'apostadores'),
 			'cookietext' => __('use cookies to improve your experience. If you continue to use the website, you accept our terms and conditions.', 'apostadores'),
 			'cookietextcolor' => '#FFFFFF',
@@ -28,7 +29,7 @@
 			'cookieduration' => '90',
 		);
 		wp_localize_script( 'cookienotice', 'invcookienoticeoptions', $invcookienoticeoptions );
-	        // Enqueued script with localized data.
+		// Enqueued script with localized data.
 		wp_enqueue_script( 'cookienotice' );
 	}
 	add_action( 'wp_enqueue_scripts', 'inv_cookie_notice_styles');

@@ -9,7 +9,7 @@
 			'singular_name'         => _x( 'Apuesta', 'Post Type Singular Name', 'quecodig_apostador' ),
 			'menu_name'             => __( 'Apuestas', 'quecodig_apostador' ),
 			'name_admin_bar'        => __( 'Apuestas', 'quecodig_apostador' ),
-			'archives'              => __( 'Item Archives', 'quecodig_apostador' ),
+			'archives'              => __( 'Todas las Apuestas', 'quecodig_apostador' ),
 			'attributes'            => __( 'Item Attributes', 'quecodig_apostador' ),
 			'parent_item_colon'     => __( 'Parent Item:', 'quecodig_apostador' ),
 			'all_items'             => __( 'Todas las apuestas', 'quecodig_apostador' ),

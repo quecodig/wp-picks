@@ -40,9 +40,9 @@
 	}
 </style>
 <script>
-	$(document).on("click",'.add-emoji',function(event){
+	jQuery(document).on("click",'.add-emoji',function(event){
 		event.preventDefault();
-		var emoji_tag = $(this).attr("data-tag");
+		var emoji_tag = jQuery(this).attr("data-tag");
 		var txt = document.getElementById("event_desc");
 		if (document.selection) {
 			txt.focus();
