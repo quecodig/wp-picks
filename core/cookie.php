@@ -1,6 +1,6 @@
 <?php
     // Load Frontend Scripts + Styles
-	function inv_cookie_notice_styles() {
+	function mincrease_cookie_notice_styles() {
 		wp_register_style( 'cookie-notice-front-styles', plugins_url('assets/css/inv-cookie-notice.css', APOSTADORES_PLUGIN_FILE) );
 		wp_enqueue_style( 'cookie-notice-front-styles' );
 		wp_register_style( 'cookie-notice-front-styles-alignment', plugins_url('assets/css/inv-cookie-notice-left.css', APOSTADORES_PLUGIN_FILE) );
@@ -14,10 +14,10 @@
 		$invcookienoticeoptions = array(
 			'domain' => 'Los Apostadores',
 			'privacylink' => $privacy->guid,
-			'privacylinktext' => __('Read more', 'apostadores'),
-			'cookietext' => __('use cookies to improve your experience. If you continue to use the website, you accept our terms and conditions.', 'apostadores'),
+			'privacylinktext' => __('Read more', 'mincrease'),
+			'cookietext' => __('use cookies to improve your experience. If you continue to use the website, you accept our terms and conditions.', 'mincrease'),
 			'cookietextcolor' => '#FFFFFF',
-			'buttontext' => __('Accept', 'apostadores'),
+			'buttontext' => __('Accept', 'mincrease'),
 			'buttontextcolor' => '#FFFFFF',
 			'buttoncolor' => '#07A6D0',
 			'buttonradius' => '5px',
@@ -32,4 +32,4 @@
 		// Enqueued script with localized data.
 		wp_enqueue_script( 'cookienotice' );
 	}
-	add_action( 'wp_enqueue_scripts', 'inv_cookie_notice_styles');
+	add_action( 'wp_enqueue_scripts', 'mincrease_cookie_notice_styles');

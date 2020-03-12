@@ -1,13 +1,13 @@
 <?php
-	function apostadores_eventos_save_data($post_id){
+	function mincrease_eventos_save_data($post_id){
 		global $wpdb;
 
 		// Comprobamos si se ha definido el nonce.
-		if(!isset($_POST['apostadores_eventos_metabox_nonce'])){
+		if(!isset($_POST['mincrease_eventos_metabox_nonce'])){
 			return $post_id;
 		}
-		$nonce = $_POST['apostadores_eventos_metabox_nonce']; // Verificamos que el nonce es válido.
-		if(!wp_verify_nonce($nonce,'apostadores_eventos_metabox')){
+		$nonce = $_POST['mincrease_eventos_metabox_nonce']; // Verificamos que el nonce es válido.
+		if(!wp_verify_nonce($nonce,'mincrease_eventos_metabox')){
 			return $post_id;
 		}
 		// Si es un autoguardado nuestro formulario no se enviará, ya que aún no queremos hacer nada.
@@ -35,7 +35,7 @@
 		$event_anali = esc_textarea( $_POST['event_anali'] );
 
 		//Actualizamos la base de datos al haber cambio de estado
-		$table_name = $wpdb->prefix . "apostadores";
+		$table_name = $wpdb->prefix . "mincrease";
 		$results = $wpdb->get_results( "SELECT * FROM {$table_name} WHERE post_id = '{$post_id}'", OBJECT );
 		if($results){
 			$wpdb->update(
