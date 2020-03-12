@@ -132,10 +132,10 @@
 		$event_anali = get_post_meta( $post->ID, 'event_anali', true );
 		// Se añade un campo nonce para probarlo más adelante cuando validemos
 		wp_nonce_field( 'mincrease_eventos_metabox', 'mincrease_eventos_metabox_nonce' );
-		include APOSTADORES_PLUGIN_PATH."/admin/custom_post.php";
+		include MINCREASE_PLUGIN_PATH."/admin/custom_post.php";
 	}
 
-	include APOSTADORES_PLUGIN_PATH."/core/save_post.php";
+	include MINCREASE_PLUGIN_PATH."/core/save_post.php";
 	add_action( 'save_post', 'mincrease_eventos_save_data' );
 
 	add_filter( 'manage_mincrease_posts_columns', 'mincrease_custom_edit_eventos_columns' );
@@ -155,7 +155,7 @@
 		return $new;
 	}
 
-	function apostadores_eventos_column( $column, $post_id ) {
+	function mincrease_eventos_column( $column, $post_id ) {
 		switch ( $column ) {
 
 			case 'boleto' :
