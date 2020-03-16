@@ -81,3 +81,8 @@
 	include MINCREASE_PLUGIN_PATH."/core/custom_post.php";
 	//include MINCREASE_PLUGIN_PATH."/core/edd.php";
 	include MINCREASE_PLUGIN_PATH."/core/cookie.php";
+
+	// Check if Elementor installed and activated
+	if ( did_action( 'elementor/loaded' ) ) {
+		include MINCREASE_PLUGIN_PATH."/core/cpt_elementor.php";
+	}
