@@ -3,7 +3,7 @@
 	Plugin Name: MindFY Increase
 	Plugin URI: https://www.mindfy.co/
 	Description: MindFY Increase functions app
-	Version: 1.0
+	Version: 1.0-dev1.6
 	Author: QuéCódigo, Cristian Álvarez
 	Author URI: https://www.mindfy.co
 	License: GPL2

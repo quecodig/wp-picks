@@ -1,8 +1,8 @@
-# Copyright (C) 2019 Apostadores Plugin
-# This file is distributed under the same license as the Apostadores Plugin package.
+# Copyright (C) 2020 MindFY Increase
+# This file is distributed under the same license as the MindFY Increase Plugin package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apostadores plugin 1.0\n"
+"Project-Id-Version: MindFY Increase plugin 1.0\n"
 "Report-Msgid-Bugs-To: https://www.quecodigo.com/\n"
 "POT-Creation-Date: 2019-12-09 04:14:10+00:00\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Language: es_ES\n"
 
 #. Plugin Name of the plugin
-msgid "Apostadores Plugin"
+msgid "MindFY Increase"
 msgstr ""
 
 #. core/cookie.php:16
