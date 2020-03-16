@@ -13,7 +13,7 @@
 			// Localize the script with new data
 			$privacy = get_post(get_option( 'wp_page_for_privacy_policy'));
 			$invcookienoticeoptions = array(
-				'domain' => 'Los Apostadores',
+				'domain' => 'MindFY Increase',
 				'privacylink' => $privacy->guid,
 				'privacylinktext' => __('Read more', 'mincrease'),
 				'cookietext' => __('use cookies to improve your experience. If you continue to use the website, you accept our terms and conditions.', 'mincrease'),
